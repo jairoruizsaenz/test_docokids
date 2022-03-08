@@ -5,8 +5,13 @@
     --light: #F0F6FF;
     --dark: #262B47; */
     
-    --primary: #18b4b0;
-    --secondary: #68ccf0;
+    /* --primary: #18b4b0; */
+    /* --secondary: #68ccf0; */
+    --primary: #f2964d;
+    --secondary: #f2964d;
+    --primary2: white;
+    --primary3: #ed5482;
+    --secondary2: #f2964d;
     --light: #F0F6FF;
     --dark: #262B47;
 }
@@ -26,6 +31,10 @@
     opacity: 1;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: -0.5px; /* remove the gap so it doesn't close */
+ }
 
 /*** Heading ***/
 h1,
@@ -54,6 +63,12 @@ h6,
     -webkit-text-fill-color: transparent;
 }
 
+.text-primary-gradient-jairo2 {
+    background: linear-gradient(to bottom right, var(--primary3), var(--primary3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .text-secondary-gradient {
     background: linear-gradient(to bottom right, var(--secondary), var(--primary));
     -webkit-background-clip: text;
@@ -62,6 +77,14 @@ h6,
 
 .bg-primary-gradient {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+}
+
+.bg-primary-gradient-jairo1 {
+    background: linear-gradient(to bottom right, var(--primary2), var(--primary2));
+}
+
+.bg-primary-gradient-jairo2 {
+    background: linear-gradient(to bottom right, var(--secondary2), var(--secondary2));
 }
 
 .bg-secondary-gradient {
@@ -136,6 +159,7 @@ h6,
     font-weight: normal;
     border-radius: 50px;
 }
+
 
 .back-to-top {
     position: fixed;
@@ -264,7 +288,7 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     margin-bottom: 6rem;
-    padding: 16rem 0 0 0;
+    padding: 12rem 0 0 0;
     background:
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
@@ -272,6 +296,7 @@ h6,
         url(../img/bg-bottom.png),
         
         linear-gradient(to bottom right, var(--primary), var(--secondary));
+
     background-position:
         left 0px top 0px,
         right 0px top 50%,
@@ -433,7 +458,7 @@ h6,
 /*** Footer ***/
 .footer {
     margin-top: 6rem;
-    padding-top: 9rem;
+    padding-top: 12rem;
     background:
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
