@@ -1,21 +1,42 @@
 /********** Template CSS **********/
 :root {
-    /* --primary: #4294E3;
+    /* 
+    --primary: #4294E3;
     --secondary: #8F12FD;
     --light: #F0F6FF;
-    --dark: #262B47; */
+    --dark: #262B47;
+    --primary: #18b4b0;
+    --secondary: #68ccf0;
+    */
+
+    --p_verde: #18b4b0;
+    --p_morado: #7566db;
+    --p_azul: #68ccf0;
+    --p_naranja: #f2964d;
+    --p_verdeclaro: #afd652;
+    --p_rosado: #ed5482;
+
+    --s_morado: #9f98ff;
+    --s_azul: #a3ebff;
+    --s_naranja: #ffb482;
+    --s_verdeclaro: #deff7b;
+    --s_rosado: #ff91b5;
+
+    --t_morado: #d4d1fc;
+    --t_azul: #ddfafe;
+    --t_naranja: #fce4c2;
+    --t_verdeclaro: #f3ffc0;
+    --t_rosado: #ffdeeb;
+
     
-    /* --primary: #18b4b0; */
-    /* --secondary: #68ccf0; */
-    --primary: #f2964d;
-    --secondary: #f2964d;
+    --primary: #18b4b0;
+    --secondary: #18b4b0;
     --primary2: white;
     --primary3: #ed5482;
     --secondary2: #f2964d;
     --light: #F0F6FF;
     --dark: #262B47;
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -532,3 +553,27 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+/* .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
