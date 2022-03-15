@@ -57,6 +57,57 @@
     margin-top: -0.5px; /* remove the gap so it doesn't close */
  }
 
+
+/*** Numeración y espacios en li ***/
+/* https://stackoverflow.com/questions/4098195/can-ordered-list-produce-result-that-looks-like-1-1-1-2-1-3-instead-of-just-1 */
+
+/*
+ol { counter-reset: item }
+li{ display: block }
+li:before { content: counters(item, ".") ". "; counter-increment: item } 
+*/
+
+li.T2:before {
+    font-weight: 700 !important;
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+li.T3:before {
+    font-weight: 600 !important;
+    font-size: 1.75rem;
+    color: var(--dark);
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0;
+}
+  
+ol > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+}
+
+ol > li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em;
+}
+
+ol > li li {
+    margin: 0;
+}
+
+ol > li li:before {
+    content: counters(item, ".") " ";
+}
+
+
+
 /*** Heading ***/
 h1,
 h2,
@@ -76,6 +127,13 @@ h6,
     font-weight: 500 !important;
 }
 
+.tachado {
+    text-decoration:line-through;
+}
+
+.min-height-270 {
+    min-height: 270px;
+}
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
@@ -313,9 +371,11 @@ h6,
     background:
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
-        url(../img/bg-bottom2.png),
+        url(../img/bg-bottom2.png),                
         url(../img/bg-bottom.png),
+        /* url(../img/bg-bottom-jairo.png), */
         
+                
         linear-gradient(to bottom right, var(--primary), var(--secondary));
 
     background-position:
