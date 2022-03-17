@@ -38,6 +38,11 @@
     --dark: #262B47;
 }
 
+/*** tamaño de pricing-box ***/
+.pricing-feature-div {
+    min-height: 48px;
+}
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
