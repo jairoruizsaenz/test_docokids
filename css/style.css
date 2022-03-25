@@ -15,7 +15,7 @@
     --p_naranja: #f2964d;
     --p_verdeclaro: #afd652;
     --p_rosado: #ed5482;
-
+    
     --s_morado: #9f98ff;
     --s_azul: #a3ebff;
     --s_naranja: #ffb482;
@@ -36,6 +36,24 @@
     --secondary2: #f2964d;
     --light: #F0F6FF;
     --dark: #262B47;
+}
+
+.collapsed {
+    color:var(--light);
+    background-color: var(--p_morado);
+}
+
+.accordion-body {
+    background-color: var(--t_naranja);
+}
+
+.accordion-button[aria-expanded="true"] {
+    color:var(--light);
+    background-color: var(--p_naranja);
+}
+
+strong {
+    color: var(--dark);
 }
 
 /*** tamaño de pricing-box ***/
